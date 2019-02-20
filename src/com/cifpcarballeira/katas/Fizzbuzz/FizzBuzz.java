@@ -17,7 +17,10 @@ public class FizzBuzz {
         
         if (i%3==0 && i%5==0 ) {
             return "FizzBuzz";
-        } 
+        }
+        else if((i%5==0 || numero.contains("5")) && ( i%3==0 || numero.contains("3"))){
+            return "FizzBuzz";
+        }
         else if (i%5==0 || numero.contains("5")) {
              return "Buzz";
         } 

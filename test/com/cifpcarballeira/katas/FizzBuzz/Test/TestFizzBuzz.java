@@ -71,4 +71,11 @@ public class TestFizzBuzz {
          String resultado=fb.getFizzBuzz(52);
          assertEquals("Buzz",resultado);
      }
+     
+     @Test
+     public void testContiene5yDivisiblePor5Contiene3yDivisiblePor3DevuelveFizzBuzz(){
+         FizzBuzz fb=new FizzBuzz();
+         String resultado=fb.getFizzBuzz(53);
+         assertEquals("FizzBuzz",resultado);
+     }
 }
