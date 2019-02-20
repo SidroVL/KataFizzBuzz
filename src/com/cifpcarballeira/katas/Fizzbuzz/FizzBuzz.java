@@ -12,13 +12,16 @@ package com.cifpcarballeira.katas.Fizzbuzz;
 public class FizzBuzz {
     
     public String getFizzBuzz(int i){
+        
+        String numero= "" + i;
+        
         if (i%3==0 && i%5==0 ) {
             return "FizzBuzz";
         } 
         else if (i%5==0) {
              return "Buzz";
         } 
-        else if ( i%3==0) {
+        else if ( i%3==0 || numero.contains("3")) {
             return "Fizz";
         }
         else return i+"";
