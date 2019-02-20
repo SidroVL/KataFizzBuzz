@@ -25,36 +25,50 @@ public class TestFizzBuzz {
      
      @Test
      public void test2devuelve2(){
-     FizzBuzz fb=new FizzBuzz();
-         String resultado=fb.getFizzBuzz(2);
-         assertEquals("2",resultado);
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(2);
+        assertEquals("2",resultado);
      }
      
      @Test
      public void test3devuelveFizz(){
-     FizzBuzz fb=new FizzBuzz();
-         String resultado=fb.getFizzBuzz(3);
-         assertEquals("Fizz",resultado);
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(3);
+        assertEquals("Fizz",resultado);
      }
      
      @Test
      public void testMul3devuelveFizz(){
-     FizzBuzz fb=new FizzBuzz();
-         String resultado=fb.getFizzBuzz(6);
-         assertEquals("Fizz",resultado);
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(6);
+        assertEquals("Fizz",resultado);
      }
      
      @Test
      public void testMul5devuelveBuzz(){
-     FizzBuzz fb=new FizzBuzz();
-         String resultado=fb.getFizzBuzz(10);
-         assertEquals("Buzz",resultado);
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(10);
+        assertEquals("Buzz",resultado);
      }
      
      @Test
      public void testMulde3y5devuelveBuzz(){
-     FizzBuzz fb=new FizzBuzz();
-         String resultado=fb.getFizzBuzz(15);
-         assertEquals("FizzBuzz",resultado);
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(15);
+        assertEquals("FizzBuzz",resultado);
+     }
+     
+     @Test
+     public void testContiene3DevuelveFizz(){
+        FizzBuzz fb=new FizzBuzz();
+        String resultado=fb.getFizzBuzz(31);
+        assertEquals("Fizz",resultado);
+     }
+     
+     @Test
+     public void testContiene5DevuelveFizzBuzz(){
+         FizzBuzz fb=new FizzBuzz();
+         String resultado=fb.getFizzBuzz(52);
+         assertEquals("Buzz",resultado);
      }
 }
