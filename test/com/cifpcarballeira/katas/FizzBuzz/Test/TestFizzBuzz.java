@@ -38,9 +38,16 @@ public class TestFizzBuzz {
      }
      
      @Test
-     public void test6devuelveFizz(){
+     public void testMul3devuelveFizz(){
      FizzBuzz fb=new FizzBuzz();
          String resultado=fb.getFizzBuzz(6);
          assertEquals("Fizz",resultado);
+     }
+     
+     @Test
+     public void testMul5devuelveBuzz(){
+     FizzBuzz fb=new FizzBuzz();
+         String resultado=fb.getFizzBuzz(10);
+         assertEquals("Buzz",resultado);
      }
 }
